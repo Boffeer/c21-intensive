@@ -1,0 +1,463 @@
+//Variables
+
+$background-black: #0D1317
+$diamond-gradient: radial-gradient(50% 50% at 50% 50%, #DCC688 0%, #D5BE7C 100%)
+$text-black: #333333
+$text-golden: #D1C297
+
+//PRIMARY
+*
+  box-sizing: border-box
+  outline: none
+
+
+a
+  text-decoration: none
+  color: inherit
+
+a, button
+  cursor: pointer
+
+input, button
+  border: none
+  padding: 0
+  background: none
+
+p, ul, h1, h2, h3, h4, h5, h6, ol
+  padding: 0
+  margin: 0
+  font-weight: normal
+
+ul, ol
+  list-style: none
+
+button, input
+  display: inline-block
+
+body
+  font-family: Montserrat, sans-serif
+  background-color: #fff
+
+header, main, footer
+  overflow: hidden
+
+
+//Utilities
+.container
+  width: 100%
+  padding-left: 10px
+  padding-right: 10px
+
+.section
+  padding-top: 40px
+  padding-bottom: 40px
+
+  &--black
+    background-color: $background-black
+    background-image: url("./img/black-dots-bg.png")
+
+  &__title
+    color: #fff
+    font-weight: 700
+    font-size: 20px
+    line-height: 140%
+    text-transform: uppercase
+    letter-spacing: 0.05em
+
+  &__text
+    color: #ffffff
+    font-size: 14px
+    font-weight: normal
+    line-height: 140%
+
+    &--small
+      font-size: 13px
+      line-height: 130%
+      padding-top: 20px
+      display: inline-block
+
+  &--bold
+    font-weight: 900
+
+.text--black
+  color: $text-black
+
+.text--white
+  color: #ffffff
+
+.align-center
+  text-align: center
+
+.button--common
+  width: 100%
+  padding-top: 26px
+  padding-bottom: 26px
+  display: flex
+  justify-content: center
+  align-items: center
+  background-image: $diamond-gradient
+  box-shadow: 0px 4px 0px #A8976B
+  border-radius: 8px
+  font-weight: 700
+  font-size: 14px
+  text-transform: uppercase
+
+//HEADER
+.header
+  padding-top: 25px
+  padding-bottom: 11px
+  background-color: $background-black
+  background-image: url("./img/black-dots-bg.png")
+
+  &-wrap
+    display: flex
+    justify-content: space-between
+
+  &__logo
+    color: $text-golden
+    font-weight: bold
+    font-size: 20px
+    text-transform: uppercase
+
+    &-main
+      display: flex
+      flex-direction: column
+      letter-spacing: 1px
+      line-height: 50%
+
+    &-sub
+      font-size: 14px
+      text-transform: none
+
+  &__btn
+    height: 16px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    &--span
+      width: 20px
+      display: inline-block
+      height: 2px
+      border-radius: 2px
+      background-color: #fff
+
+//SECTION FIRST
+.section-first
+  padding-top: 0
+
+  &__title
+    font-size: 19px
+    font-weight: normal
+    letter-spacing: 0.05em
+    margin-bottom: 10px
+
+    &--bold
+      font-weight: 900
+
+  &__bg
+    width: 107%
+    margin-left: -4%
+
+  &__btn
+    margin-top: -75px
+    position: relative
+    z-index: 20
+
+//SECTION READY
+.section-ready
+	background-color: #fff
+
+.section-ready
+  &__title
+    margin-bottom: 10px
+
+  &__subtitle
+    margin-bottom: 20px
+
+  &__img
+    width: 108%
+    margin-left: -4%
+
+  &-offers
+    padding-top: 30px
+    padding-bottom: 60px
+
+    &__title
+      margin-bottom: 10px
+
+    &__item
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+    &__img
+      display: inline-block
+      margin-bottom: 15px
+      height: 130px
+
+.section-feature
+  background: #fff
+  backdrop-filter: blur(14px)
+  border-radius: 8px
+  position: relative
+  min-height: 100px
+  display: flex
+  align-items: flex-end
+  padding-left: 16px
+  padding-right: 16px
+  padding-bottom: 13px
+
+  &-wrap
+    border-radius: 10px
+    margin-bottom: 20px
+    padding: 2px
+    background-image: linear-gradient(90deg, rgba(168, 151, 107, 0.3) 0%, rgba(168, 151, 107, 0) 46.88%, rgba(168, 151, 107, 0.4) 100%)
+
+  &__text
+    font-weight: bold
+    font-size: 14px
+    line-height: 130%
+
+  &__img
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    top: -50%
+    width: 130px
+
+//SECTION BONUS
+.section-bonus
+  min-height: 530px
+  background-image: url("./img/main-bonus.png")
+  background-repeat: no-repeat
+  background-size: cover
+
+  &__title
+    margin-bottom: 15px
+
+  &__subtitle
+    margin-bottom: 225px
+
+  &__button
+    margin-top: auto
+
+//SECTION WHO
+.section-who
+	background-color: #fff
+
+.section-who
+  &__title
+    margin-bottom: 15px
+
+.features-list
+  margin-bottom: 40px
+
+  &--white li
+    color: #fff
+
+  &--bg
+    background-color: #0D1317
+
+  &__item
+    padding-left: 30px
+    position: relative
+    margin-bottom: 25px
+
+    &:last-child
+      margin-bottom: 0
+
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      background-image: url("./img/li-label.svg")
+      width: 20px
+      height: 20px
+
+//SECTION SPEAKER
+.section-speaker
+  position: relative
+
+  &-bg
+    position: absolute
+    left: 0
+    top: 0
+    right: 0
+    background: url('./img/common-bg.png')
+    mix-blend-mode: multiply
+
+  &__title
+    font-weight: normal
+    margin-bottom: 15px
+
+    &--bold
+      font-weight: 900
+
+  &__img
+    width: 107%
+    margin-left: -4%
+
+//SECTION EXPERIENCE
+.section-experience
+	background-color: #fff
+.section-experience
+  &__title
+    margin-bottom: 10px
+
+  &__img
+    width: 107%
+    margin-left: -4%
+
+  &__desc
+    background: #FFFFFF
+
+  &__text
+    color: #333333
+    font-size: 14px
+    line-height: 130%
+    font-weight: bold
+    margin-bottom: 15px
+
+//FOOTER
+.footer
+  background: $background-black
+  padding-top: 25px
+  padding-bottom: 30px
+
+  &__logo
+    margin-bottom: 30px
+
+  &-contacts
+    color: #FFFFFF
+    margin-bottom: 20px
+
+    &__item
+      font-size: 14px
+      line-height: 130%
+      margin-bottom: 8px
+      padding-left: 25px
+      position: relative
+
+      &--address
+        &::before
+          content: ''
+          position: absolute
+          left: 0
+          top: 0
+          width: 10px
+          height: 12px
+          background-image: url("./img/address.svg")
+
+      &--phone
+        &::before
+          content: ''
+          position: absolute
+          left: 0
+          top: 50%
+          transform: translateY(-50%)
+          width: 10px
+          height: 11px
+          background-image: url("./img/phone-mini.svg")
+
+      &:last-child
+        margin-bottom: 0
+
+  &__text
+    font-size: 12px
+    line-height: 140%
+    margin-bottom: 20px
+    color: #fff
+    position: relative
+
+    &--transparent
+      color: rgba(255, 255, 255, 0.5)
+
+    &--underlined
+      margin-bottom: 32px
+      &::after
+        content: ''
+        position: absolute
+        width: 50px
+        height: 1px
+        background-color: #24353E
+        bottom: -18px
+        left: 50%
+        transform: translateX(-50%)
+
+  &__link
+    text-decoration: underline
+    display: inline-block
+    width: 100%
+
+.social
+  display: flex
+  justify-content: center
+  margin-bottom: 15px
+
+  &__link
+    margin-right: 12px
+
+.wrapper-phone
+	max-width: 428px
+	margin-left: auto
+	margin-right: auto
+	background-color: #fff
+
+
+.wrapper-phone:after,
+.wrapper-phone:before
+	content: ""
+	position: fixed
+	box-sizing: border-box
+	top: 16px
+	left: calc(50% - 214px)
+	display: block
+	height: 968px
+	width: 452px
+	z-index: 100
+	pointer-events: none
+
+.wrapper-phone:before
+	border-radius: 68px
+	border: 26.5px solid #222
+	box-shadow: 0 0 0 100vw var(--c-primary)
+
+.wrapper-phone__inner
+	overflow: hidden
+	padding-top: 40px
+	padding-left: 26px
+	background: #292f32
+
+@media (max-width: 428px)
+	.wrapper-phone__inner
+		padding: 0
+
+	.wrapper-phone::before,
+	.wrapper-phone::after
+		display: none
+
+body
+	background: #292f32
+.header__btn
+	display: none
+
+@media (min-width: 428px)
+	body:after
+		content: ''
+		background: #292f32
+		width: 100%
+		height: 40px
+		position: fixed
+		top: 0
+		z-index: 99
+
+.section-first
+	.section__text.section__text--small.align-center
+		display: block
+
+@media (max-width: 428px) and (min-width: 360px)
+	.section-bonus
+		background-position-y: -80px;
